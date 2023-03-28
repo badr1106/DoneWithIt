@@ -25,6 +25,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description" : "A Market Place for selling the stuff you no longer need"
   }
 }
