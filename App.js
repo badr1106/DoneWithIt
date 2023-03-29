@@ -4,7 +4,18 @@ import { StyleSheet, Text, SafeAreaView, Platform, Button } from "react-native";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Click Me" onPress={() => console.log("Abyaaaaaaad")} />
+      <Button
+        title={
+          Platform.OS === "android"
+            ? "Click Me ya Fala7"
+            : "Click Me Ba3d Eznak"
+        }
+        onPress={() =>
+          Platform.OS === "android"
+            ? console.log("Android Pressed")
+            : console.log("iOS Pressed")
+        }
+      />
     </SafeAreaView>
   );
 }
