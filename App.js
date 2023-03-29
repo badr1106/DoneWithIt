@@ -4,13 +4,13 @@ import {
   TouchableHighlight,
   Image,
   SafeAreaView,
-  View,
+  Alert,
   Button,
 } from "react-native";
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={[containerStyle, styles.container]}>
       <Text>Hello React Native</Text>
       <TouchableHighlight onPress={() => console.log("Image Tapped")}>
         <Image
@@ -23,12 +23,16 @@ export default function App() {
       </TouchableHighlight>
       <Button
         title="Click Me"
-        onPress={() => console.log("Button Pressed")}
+        onPress={() =>
+          Alert.prompt("Title", "Es7aa", (text) => console.log(text))
+        }
         color="blue"
       />
     </SafeAreaView>
   );
 }
+
+const containerStyle = { backgroundColor: "orange" };
 
 const styles = StyleSheet.create({
   container: {
