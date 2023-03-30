@@ -14,30 +14,23 @@ export default function App() {
       <View
         style={{
           backgroundColor: "teal",
-          flexBasis: 100,
-          flexGrow: 1,
-          // width: 100,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "tomato",
-          flexShrink: 1,
-          width: 300,
-          height: 100,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
           width: 100,
           height: 100,
         }}
       />
       <View
         style={{
-          backgroundColor: "black",
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+          top: 20,
+          left: 20,
+          position: "absolute",
+        }}
+      />
+      <View
+        style={{
+          backgroundColor: "gold",
           width: 100,
           height: 100,
         }}
